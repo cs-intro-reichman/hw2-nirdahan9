@@ -3,30 +3,26 @@ public class Cheers {
         public static void main(String[] args) {
 	    // Replace this comment with your code
             int index = 0;
-            while(index < args.length-1) {
-                if((args[index].charAt(0)=='A')||(args[index].charAt(0)=='E')
-                ||(args[index].charAt(0)=='F')||(args[index].charAt(0)=='H')
-                ||(args[index].charAt(0)=='I')||(args[index].charAt(0)=='L')
-                ||(args[index].charAt(0)=='M')||(args[index].charAt(0)=='N')
-                ||(args[index].charAt(0)=='O')||(args[index].charAt(0)=='R')
-                ||(args[index].charAt(0)=='S')||(args[index].charAt(0)=='X')) {
-                        System.out.println("Give me an "+args[index]+": "+args[index]+"!");
+            while(index < args[0].length()) {
+                if((args[0].charAt(index)=='A')||(args[0].charAt(index)=='E')
+                ||(args[0].charAt(index)=='F')||(args[0].charAt(index)=='H')
+                ||(args[0].charAt(index)=='I')||(args[0].charAt(index)=='L')
+                ||(args[0].charAt(index)=='M')||(args[0].charAt(index)=='N')
+                ||(args[0].charAt(index)=='O')||(args[0].charAt(index)=='R')
+                ||(args[0].charAt(index)=='S')||(args[0].charAt(index)=='X')) {
+                        System.out.println("Give me an "+args[0].charAt(index)+": "
+                        +args[0].charAt(index)+"!");
                 }
                 else {
-                        System.out.println("Give me a "+args[index]+": "+args[index]+"!");
+                        System.out.println("Give me a "+args[0].charAt(index)+": "
+                        +args[0].charAt(index)+"!");
                 }
                 index++;
             }
             System.out.println("What does that spell?");
             int count = 0;
-            index = 0;
-            String name = "";
-            while(index < args.length-1) {
-                name += args[index];
-                index++;
-            }
-            while(count < Integer.parseInt(args[args.length-1])) {
-                System.out.println(name + " ! ! !");
+            while(count < Integer.parseInt(args[1])) {
+                System.out.println(args[0] + " ! ! !");
                 count++;
             }
 
