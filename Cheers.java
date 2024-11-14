@@ -20,7 +20,6 @@ public class Cheers {
             for(int i = 0; i < args[0].length() ; i ++) {
                 System.out.println(args[0] + " ! ! !");
             }
-            }
 
         }
 }
