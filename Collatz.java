@@ -20,13 +20,13 @@ public class Collatz {
 					System.out.print(currentResult+" ");
 					turns++;
 				}
-				System.out.print("("+turns+") \n");
+				System.out.print("("+turns+")\n");
 				turns=1;
 				seed++;
 				newGame=true;
 				currentResult = seed;
 			}
 		}
-		System.out.println("Every one of the first "+toSeed+" hailstone sequences recahed 1.");
+		System.out.println("Every one of the first "+toSeed+" hailstone sequences reached 1.");
 	}
 }

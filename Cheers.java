@@ -7,20 +7,19 @@ public class Cheers {
             while(index < args[0].length()) {
                 if((ch=='A')||(ch=='E')||(ch=='F')||(ch=='H')||(ch=='I')||(ch=='L')
                 ||(ch=='M')||(ch=='N')||(ch=='O')||(ch=='R')||(ch=='S')||(ch=='X')) {
-                        System.out.println("Give me an "+ch+": "+ch+"!");
+                        System.out.println("Give me an "+ch+":  "+ch+"!");
 
                 }
                 else {
-                        System.out.println("Give me a "+ch+": "+ch+"!");
+                        System.out.println("Give me a "+ch+":  "+ch+"!");
                 }
                 index++;
                 ch = args[0].toUpperCase().charAt(index);
             }
             System.out.println("What does that spell?");
-            int count = 0;
-            while(count < Integer.parseInt(args[1])) {
+            for(int i = 0; i < args[0].length() ; i ++) {
                 System.out.println(args[0] + " ! ! !");
-                count++;
+            }
             }
 
         }
