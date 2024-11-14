@@ -22,8 +22,8 @@ public class CalcPi {
 			result -= (1.0/toReduce);
 			toReduce += 4.0;
 		}
-		result*=4;
+		result*=4.0;
 		System.out.println("pi according to Java: " + Math.PI);
-		System.out.println("pi, approximated:   " + result);
+		System.out.println("pi, approximated:  " + result);
 	}
 }
