@@ -13,7 +13,7 @@ public class CalcPi {
 			toAdd += 4.0;
 			count+=2;
 		}
-		if(Integer.parseInt(args[0])%2==0) result -= (1.0/toReduce);
+		if((Integer.parseInt(args[0])%2==1)&&(Integer.parseInt(args[0])!=1)) result -= (1.0/toReduce);
 		result*=4;
 		System.out.println("pi acourding to Java: " + Math.PI);
 		System.out.println("pi, aproximated: " + result);

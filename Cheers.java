@@ -4,21 +4,22 @@ public class Cheers {
 	    // Replace this comment with your code
             int index = 0;
             char ch = args[0].toUpperCase().charAt(index);
+            char chUp = args[0].toUpperCase().charAt(index);
             while(index < args[0].length()) {
                 ch = args[0].toUpperCase().charAt(index);
-                if((ch=='A')||(ch=='E')||(ch=='F')||(ch=='H')||(ch=='I')||(ch=='L')
-                ||(ch=='M')||(ch=='N')||(ch=='O')||(ch=='R')||(ch=='S')||(ch=='X')) {
-                        System.out.println("Give me an "+ch+":  "+ch+"!");
+                if((chUp=='A')||(chUp=='E')||(chUp=='F')||(chUp=='H')||(chUp=='I')||(chUp=='L')
+                ||(chUp=='M')||(chUp=='N')||(chUp=='O')||(chUp=='R')||(chUp=='S')||(chUp=='X')) {
+                        System.out.println("Give me an  "+chUp+": "+ch+"!");
 
                 }
                 else {
-                        System.out.println("Give me a "+ch+":  "+ch+"!");
+                        System.out.println("Give me a  "+ch+": "+ch+"!");
                 }
                 index++;
             }
             System.out.println("What does that spell?");
             for(int i = 0; i < Integer.parseInt(args[1]) ; i ++) {
-                System.out.println(args[0] + " ! ! !");
+                System.out.println(args[0].toUpperCase() + " !!!");
             }
 
         }
