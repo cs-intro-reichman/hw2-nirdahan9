@@ -5,16 +5,16 @@ public class Cheers {
             int index = 0;
             char ch = args[0].toUpperCase().charAt(index);
             char chUp = args[0].toUpperCase().charAt(index);
+            String vowels = "AEFHILMNORSXaefhilmnorsx";
             while(index < args[0].length()) {
                 ch = args[0].charAt(index);
                 chUp = args[0].toUpperCase().charAt(index);
-                if((chUp=='A')||(chUp=='E')||(chUp=='F')||(chUp=='H')||(chUp=='I')||(chUp=='L')
-                ||(chUp=='M')||(chUp=='N')||(chUp=='O')||(chUp=='R')||(chUp=='S')||(chUp=='X')) {
-                        System.out.println("Give me an  "+chUp+": "+ch+"!");
+                if(vowels.indexOf(ch)!=-1) {
+                        System.out.println("Give me an "+chUp+": "+chUp+"!");
 
                 }
                 else {
-                        System.out.println("Give me a  "+ch+": "+ch+"!");
+                        System.out.println("Give me a "+chUp+": "+chUp+"!");
                 }
                 index++;
             }

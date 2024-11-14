@@ -6,13 +6,13 @@ public class CalcPi {
 		double toReduce = 3.0;
 		double toAdd = 5.0;
 		int toAddTimes = 0, toReduceTimes = 0;
-		if(Integer.parseInt(args[1])%2==0) {
-			toAddTimes = ((Integer.parseInt(args[1])-1)/2);
-			toReduceTimes = (Integer.parseInt(args[1]))/2;
+		if(Integer.parseInt(args[0])%2==0) {
+			toAddTimes = ((Integer.parseInt(args[0])-1)/2);
+			toReduceTimes = (Integer.parseInt(args[0]))/2;
 		}
 		else {
-			toAddTimes = ((Integer.parseInt(args[1]))/2);
-			toReduceTimes = ((Integer.parseInt(args[1]))/2);
+			toAddTimes = ((Integer.parseInt(args[0]))/2);
+			toReduceTimes = ((Integer.parseInt(args[0]))/2);
 		}
 		for(int i = 0 ; i < toAddTimes ; i ++) {
 			result += (1.0/toAdd);
