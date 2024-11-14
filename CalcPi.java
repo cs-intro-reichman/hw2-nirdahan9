@@ -23,7 +23,7 @@ public class CalcPi {
 			toReduce += 4.0;
 		}
 		result*=4;
-		System.out.println("pi acourding to Java: " + Math.PI);
+		System.out.println("pi according to Java: " + Math.PI);
 		System.out.println("pi, aproximated: " + result);
 	}
 }

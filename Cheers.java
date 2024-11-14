@@ -14,13 +14,13 @@ public class Cheers {
 
                 }
                 else {
-                        System.out.println("Give me a "+chUp+": "+chUp+"!");
+                        System.out.println("Give me a  "+chUp+": "+chUp+"!");
                 }
                 index++;
             }
             System.out.println("What does that spell?");
             for(int i = 0; i < Integer.parseInt(args[1]) ; i ++) {
-                System.out.println(args[0].toUpperCase() + " !!!");
+                System.out.println(args[0].toUpperCase() +" !!!");
             }
 
         }
