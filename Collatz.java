@@ -6,7 +6,7 @@ public class Collatz {
 		int turns = 1;
 		String mode = args[1];
 		boolean newGame=true;
-		if(mode.equals("V")) {
+		if(mode.equals("V")||mode.equals("v")) {
 			while(seed<=toSeed) {
 				System.out.print(currentResult+" ");
 				while((currentResult!=1)||newGame)
