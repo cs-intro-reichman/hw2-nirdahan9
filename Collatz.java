@@ -5,8 +5,8 @@ public class Collatz {
 		int seed = 1, toSeed = Integer.parseInt(args[0]), currentResult = 1;
 		int turns = 1;
 		String mode = args[1];
-		boolean newGame=true;
-		if(mode.equals("V")||mode.equals("v")) {
+		boolean newGame=true; // for ignoring the case the starting number is 1
+		if(mode.equals("V")||mode.equals("v")) { 
 			while(seed<=toSeed) {
 				System.out.print(currentResult+" ");
 				while((currentResult!=1)||newGame)
@@ -26,7 +26,7 @@ public class Collatz {
 				newGame=true;
 				currentResult = seed;
 			}
-		}
+		} //if the input doesnt equal v - skip the calculations
 		System.out.println("Every one of the first "+toSeed+" hailstone sequences reached 1.");
 	}
 }
